@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "ID": "1",
+      "Category": "Mustache",
+      "Name": "Toolbar",
+      "Price": "50",
+      "Image_src": "lol.jpg",
+      "Rating": "5"
+    },
+    {
+      "ID": "2",
+      "Category": "Geta",
+      "Name": "Geta - String",
+      "Price": "80",
+      "Image_src": "oof.jpg",
+      "Rating": "3"
+    },
+    {
+      "ID": "3",
+      "Category": "Fudonshi",
+      "Name": "F - String",
+      "Price": "200",
+      "Image_src": "bruh.jpg",
+      "Rating": "2"
+    }
+  ]
+}

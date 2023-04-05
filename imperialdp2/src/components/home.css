@@ -1,0 +1,143 @@
+body {
+  overflow: hidden;
+}
+
+.top_bar {
+  display: flex;
+  position: relative;
+  background-color: rgb(225, 225, 237);
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.title_link {
+  font-size: 9vh;
+  padding-right: 5%;
+  font-style: italic;
+}
+
+.def_link {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 3.5vh;
+}
+
+.def_link:hover {
+  text-decoration: underline;
+}
+
+.extra_link {
+  position: relative;
+  padding-left: 6%;
+  font-size: 4vh;
+  z-index: 1;
+}
+
+.extra_link:hover {
+  text-decoration: underline;
+}
+
+.title_con {
+  display: flex;
+}
+
+.chosen_title_right {
+  position: absolute;
+  font-size: 30vh;
+  z-index: 0;
+  right: 0;
+  top: -7vh;
+  margin: 0;
+  user-select: none;
+  z-index: 0;
+}
+
+.chosen_title_left {
+  position: absolute;
+  font-size: 30vh;
+  z-index: 0;
+  left: 0;
+  top: -7vh;
+  margin: 0;
+  user-select: none;
+  z-index: 0;
+}
+
+.body_con {
+  position: relative;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.slideshow {
+  margin: auto;
+  margin-top: 2%;
+  width: 55%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 70vh;
+  width: 100%;
+}
+
+.slideshowButtons {
+  text-align: center;
+}
+
+.slideshowButton {
+  display: inline-block;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 2vh 1vh 0px;
+  background-color: #c4c4c4;
+}
+
+.slideshowButton.active {
+  background-color: #6a0dad;
+}
+
+.shi_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  height: 90vh;
+  background-color: blue;
+  text-align: center;
+  padding: none;
+  cursor: pointer;
+}
+
+#Shinshi_title {
+  background-color: blue;
+}
+
+#Soushi_title {
+  background-color: green;
+}
+
+.disappear {
+  display: none;
+}

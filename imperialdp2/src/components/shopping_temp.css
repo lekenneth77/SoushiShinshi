@@ -1,0 +1,22 @@
+body {
+  overflow: auto;
+}
+
+.title_card {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping_items_con {
+  display: flex;
+}
+
+.shopping_item {
+  height: 60vh;
+  width: 40vh;
+  background-color: red;
+}
