@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./home.css";
 import "./animation.css";
 import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 
 import { Link } from "react-router-dom";
 
@@ -11,29 +12,40 @@ const Home = () => {
   const [shin, set_shin] = useState(false);
 
   function click_con(shin_bool) {
-    set_title_slide(true);
-    set_shin(shin_bool);
+    if (!title_slide) {
+      set_title_slide(true);
+      set_shin(shin_bool);
+      document.documentElement.style = "overflow: auto";
+    }
   }
 
   return (
     <>
-      <div
-        onClick={() => {
-          if (title_slide) set_title_slide(false);
-        }}
-      >
-        {title_slide ? <Header shin_bool={shin} /> : <DefaultHeader />}
-      </div>
-      <div className={`${title_slide ? "slide-top" : "title_con"}`}>
-        <TitleButton name={"Shinshi"} onClick={() => click_con(true)} />
-        <TitleButton name={"Soushi"} onClick={() => click_con(false)} />
-      </div>
+      <div id="main_body">
+        <div
+          onClick={() => {
+            if (title_slide) set_title_slide(false);
+          }}
+        >
+          {title_slide ? <Header shin_bool={shin} /> : <DefaultHeader />}
+        </div>
+        <div className={`${title_slide ? "slide-top" : "title_con"}`}>
+          <TitleButton name={"Shinshi"} onClick={() => click_con(true)} />
+          <TitleButton name={"Soushi"} onClick={() => click_con(false)} />
+        </div>
 
-      <div className={`body_con ${title_slide ? "mod_blur-in" : "disappear"}`}>
-        <h1 className={`${shin ? "chosen_title_right" : "chosen_title_left"}`}>
-          {`${shin ? "紳士" : "壮士"}`}
-        </h1>
-        <Slideshow />
+        <div
+          className={`body_con ${title_slide ? "mod_blur-in" : "disappear"}`}
+        >
+          <h1
+            className={`${shin ? "chosen_title_right" : "chosen_title_left"}`}
+          >
+            {`${shin ? "紳士" : "壮士"}`}
+          </h1>
+          <Slideshow />
+        </div>
+
+        <Footer />
       </div>
     </>
   );

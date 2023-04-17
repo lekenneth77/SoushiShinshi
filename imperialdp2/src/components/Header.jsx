@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-let SHIN_LINK_NAMES = ["Suits", "Bowler Hats", "Mustaches"];
+let SHIN_LINK_NAMES = ["Suits", "Bowler Hats", "Mustache"];
 let SOU_LINK_NAMES = ["Kimono", "Fudonshi", "Geta"];
 let EXTRA_LINKS = ["About", "Cart"];
 

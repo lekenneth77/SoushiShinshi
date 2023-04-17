@@ -36,6 +36,7 @@
 }
 
 .mod_blur-in {
+  overflow: hidden;
   position: relative;
   width: 100%;
   margin-left: auto;
@@ -46,8 +47,7 @@
 }
 
 .blur-in {
-  animation: blur-in 1s linear both;
-  animation-delay: 2.5s;
+  animation: blur-in 0.5s linear both;
 }
 
 @keyframes blur-in {
@@ -59,4 +59,17 @@
     filter: blur(0);
     opacity: 1;
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }

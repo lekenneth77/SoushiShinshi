@@ -5,24 +5,36 @@
       "Category": "Mustache",
       "Name": "Toolbar",
       "Price": "50",
-      "Image_src": "lol.jpg",
-      "Rating": "5"
+      "Image_src": "big_handlebar.jpg",
+      "Rating": "5",
+      "shin_bool": "1"
     },
     {
       "ID": "2",
       "Category": "Geta",
       "Name": "Geta - String",
       "Price": "80",
-      "Image_src": "oof.jpg",
-      "Rating": "3"
+      "Image_src": "big_handlebar.jpg",
+      "Rating": "3",
+      "shin_bool": "0"
     },
     {
       "ID": "3",
       "Category": "Fudonshi",
       "Name": "F - String",
       "Price": "200",
-      "Image_src": "bruh.jpg",
-      "Rating": "2"
+      "Image_src": "big_handlebar.jpg",
+      "Rating": "2",
+      "shin_bool": "0"
+    },
+    {
+      "ID": "4",
+      "Category": "Mustache",
+      "Name": "Handlebar",
+      "Price": "56",
+      "Image_src": "big_handlebar.jpg",
+      "Rating": "5",
+      "shin_bool": "1"
     }
   ]
 }

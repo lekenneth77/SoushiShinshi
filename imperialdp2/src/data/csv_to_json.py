@@ -5,6 +5,7 @@ def csv_to_json(csv_path, json_path):
         dict = {}
         with open(csv_path, encoding = 'utf-8') as csv_handler:
                 csv_reader = csv.DictReader(csv_handler)
+                
                 rows = []
                 for row in csv_reader:
                         rows.append(row)

@@ -1,4 +1,8 @@
-body {
+/* body {
+  overflow: hidden;
+} */
+
+html {
   overflow: hidden;
 }
 
@@ -44,6 +48,12 @@ body {
 
 .extra_link:hover {
   text-decoration: underline;
+}
+
+.footer_con {
+  width: 100%;
+  height: 20vh;
+  background-color: gray;
 }
 
 .title_con {

@@ -13,10 +13,14 @@ body {
 
 .shopping_items_con {
   display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .shopping_item {
-  height: 60vh;
-  width: 40vh;
+  height: 70vh;
+  width: 60vh;
+  margin: 18vh;
+  margin-bottom: 4vh;
   background-color: red;
 }

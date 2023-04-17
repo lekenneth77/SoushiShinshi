@@ -1,4 +1,5 @@
-ID,Category,Name,Price,Image_src,Rating
-1,Mustache,Toolbar,50,lol.jpg,5
-2,Geta,Geta - String,80,oof.jpg,3
-3,Fudonshi,F - String,200,bruh.jpg,2
+ID,Category,Name,Price,Image_src,Rating,shin_bool
+1,Mustache,Toolbar,50,lol.jpg,5,1
+2,Geta,Geta - String,80,oof.jpg,3,0
+3,Fudonshi,F - String,200,bruh.jpg,2,0
+4,Mustache,Handlebar,56,lol2.jpg,5,1
