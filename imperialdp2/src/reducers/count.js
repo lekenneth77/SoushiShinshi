@@ -10,9 +10,15 @@ const reducer = (state = initState, action) => {
         arr: [...state.arr, action.item],
       };
     case "DECREMENT":
-      return state - 1;
+      return {
+        ...state,
+        arr: state.arr.filter((element) => element !== action.item),
+      };
     case "RESET":
-      return 0;
+      return {
+        ...state,
+        arr: [],
+      };
     default:
       return state;
   }

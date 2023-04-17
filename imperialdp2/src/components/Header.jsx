@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 let SHIN_LINK_NAMES = ["Suits", "Bowler Hats", "Mustache"];
 let SOU_LINK_NAMES = ["Kimono", "Fudonshi", "Geta"];
@@ -19,9 +20,13 @@ export default function Header({ shin_bool }) {
   newLinks = shin_bool ? [...shin_links] : (newLinks = [...sou_links]);
   newLinks = [...newLinks, extra_links];
 
+  const counter = useSelector((state) => state);
+  let items = counter.arr.map((item) => item);
+
   return (
     <div className="top_bar">
       <CreateLink name={"meiji"} nameOfClass={"title_link"} /> {newLinks}
+      {`${items.length === 0 ? "" : "(" + items.length + ")"}`}
     </div>
   );
 }
