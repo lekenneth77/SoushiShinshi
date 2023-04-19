@@ -1,6 +1,7 @@
 import React from "react";
 import "./shopping_temp.css";
 import Header from "./Header";
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 import data from "../data/data.json";
@@ -24,6 +25,7 @@ export default function ShoppingTemplate({
         <div className="title_card blur-in">TITLE CARD</div>
       </div>
       <div className="shopping_items_con">{items}</div>
+      <Footer />
     </>
   );
 }
@@ -35,10 +37,17 @@ function ShoppingItem({ category, item }) {
   return (
     <div className="shopping_item" key={item.ID}>
       <Link to={"/" + category.toLowerCase() + "/" + item.ID}>
-        <div className="item_img">ASDFASDFLKJSADF</div>
+        <img
+          className="shopping_img"
+          src={require("./../img/" + item.Image_src)}
+          alt="alt_image"
+        />
       </Link>
-      <div className="item_name">Name: {item.Name}</div>
-      <div className="item_price">Price: {item.Price}</div>
+      <div className="shopping_name">
+        {item.Name}
+        {}
+        <span className="shopping_price"> ${item.Price}</span>
+      </div>
     </div>
   );
 }

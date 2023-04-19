@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { SHIN_CATEGORIES, SOU_CATEGORIES } from "./../App";
 
-let SHIN_LINK_NAMES = ["Suits", "Bowler Hats", "Mustache"];
-let SOU_LINK_NAMES = ["Kimono", "Fudonshi", "Geta"];
 let EXTRA_LINKS = ["About", "Cart"];
 
 export default function Header({ shin_bool }) {
   let newLinks = [];
-  const shin_links = SHIN_LINK_NAMES.map((name) =>
+  const shin_links = SHIN_CATEGORIES.map((name) =>
     CreateLink({ name: name, nameOfClass: "def_link " })
   );
-  const sou_links = SOU_LINK_NAMES.map((name) =>
+  const sou_links = SOU_CATEGORIES.map((name) =>
     CreateLink({ name: name, nameOfClass: "def_link " })
   );
   const extra_links = EXTRA_LINKS.map((name) =>
@@ -37,6 +36,14 @@ function CreateLink({ name, nameOfClass }) {
       key={name}
       to={"/" + name.toLowerCase()}
       className={"link " + nameOfClass}
+      onClick={() => {
+        if (name !== "meiji") {
+          console.log("PLEASE");
+          document.body.style = "overflow: auto";
+        } else {
+          document.body.style = "overflow: hidden";
+        }
+      }}
     >
       {name}
     </Link>

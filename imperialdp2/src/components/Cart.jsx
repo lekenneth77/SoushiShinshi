@@ -30,7 +30,19 @@ export default function Cart() {
             Checkout
           </button>
         </div>
-        <div id="your_cart">Your Items</div>
+        <div id="your_cart">
+          Your Items{" "}
+          {items.length === 0 ? (
+            <span></span>
+          ) : (
+            <button
+              className="empty_cart"
+              onClick={() => dispatch({ type: "EMPTY" })}
+            >
+              EMPTY CART
+            </button>
+          )}
+        </div>
         {items}
       </div>
       <Footer />
@@ -40,7 +52,6 @@ export default function Cart() {
 
 function CartItem({ item, dispatch }) {
   counter++;
-  // onClick={() => dispatch({ type: "INCREMENT", item: item })}
   return (
     <div key={counter} className="cart_item">
       <button onClick={() => dispatch({ type: "DECREMENT", item: item })}>

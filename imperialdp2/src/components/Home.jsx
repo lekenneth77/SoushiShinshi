@@ -15,7 +15,7 @@ const Home = () => {
     if (!title_slide) {
       set_title_slide(true);
       set_shin(shin_bool);
-      document.documentElement.style = "overflow: auto";
+      document.body.style = "overflow: auto";
     }
   }
 
@@ -24,14 +24,16 @@ const Home = () => {
       <div id="main_body">
         <div
           onClick={() => {
-            if (title_slide) set_title_slide(false);
+            if (title_slide) {
+              set_title_slide(false);
+            }
           }}
         >
           {title_slide ? <Header shin_bool={shin} /> : <DefaultHeader />}
         </div>
         <div className={`${title_slide ? "slide-top" : "title_con"}`}>
-          <TitleButton name={"Shinshi"} onClick={() => click_con(true)} />
-          <TitleButton name={"Soushi"} onClick={() => click_con(false)} />
+          <TitleButton name={"shinshi"} onClick={() => click_con(true)} />
+          <TitleButton name={"soushi"} onClick={() => click_con(false)} />
         </div>
 
         <div
@@ -62,9 +64,20 @@ function DefaultHeader() {
 }
 
 function TitleButton({ name, onClick }) {
+  let name_var = "";
+  if (name === "soushi") {
+    name_var = "壮士";
+  } else {
+    name_var = "紳士";
+  }
   return (
     <button className={"shi_container"} id={name + "_title"} onClick={onClick}>
-      {name}
+      <div className="title_name">{name_var}</div>
+      <img
+        className="title_img"
+        src={require("./../img/title_" + name + ".jpg")}
+        alt={name + " alt"}
+      />
     </button>
   );
 }

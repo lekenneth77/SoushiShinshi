@@ -14,7 +14,7 @@ const reducer = (state = initState, action) => {
         ...state,
         arr: state.arr.filter((element) => element !== action.item),
       };
-    case "RESET":
+    case "EMPTY":
       return {
         ...state,
         arr: [],

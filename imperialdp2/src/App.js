@@ -15,8 +15,8 @@ import ShoppingTemplate from "./components/Shopping-Template";
 import ShoppingItem from "./components/ShoppingItem";
 import Cart from "./components/Cart";
 
-const SHIN_CATEGORIES = ["Suit", "Bowler", "Mustache"];
-const SOU_CATEGORIES = ["Kimono", "Fudonshi", "Geta"];
+export const SHIN_CATEGORIES = ["Suit", "Bowler", "Mustache"];
+export const SOU_CATEGORIES = ["Kimono", "Fudonshi", "Geta"];
 
 function App() {
   const item_routes = data.items.map((item) => ShoppingItemRoute(item));
@@ -32,15 +32,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={Home()} />
           <Route exact path="/cart" element={Cart()} />
-          {/* <Route
-            exact
-            path="/mustache"
-            element={ShoppingTemplate({
-              shin_bool: true,
-              title_card_ind: 0,
-              category: "Mustache",
-            })}
-          /> */}
           <Route path="/" element={<Navigate replace to="/" />} />
           <Route path="/meiji" element={<Navigate replace to="/" />} />
           {shin_routes}

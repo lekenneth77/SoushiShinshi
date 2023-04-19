@@ -1,6 +1,3 @@
-body {
-  overflow: auto;
-}
 
 .title_card {
   display: flex;
@@ -18,9 +15,27 @@ body {
 }
 
 .shopping_item {
+  display: flex;
+  flex-direction: column;
   height: 70vh;
   width: 60vh;
   margin: 18vh;
-  margin-bottom: 4vh;
-  background-color: red;
+  margin-bottom: 8vh;
+}
+
+.shopping_img {
+  align-self: center;
+  justify-self: center;
+  height: 65vh;
+  width: 50vh;
+}
+
+.shopping_name {
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.shopping_price {
+  font-size: 4vh;
+  font-style: italic;
 }

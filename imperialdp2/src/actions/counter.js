@@ -8,6 +8,6 @@ export function decrement() {
     type: "DECREMENT",
   };
 }
-export function reset() {
-  return { type: "RESET" };
+export function empty() {
+  return { type: "EMPTY" };
 }

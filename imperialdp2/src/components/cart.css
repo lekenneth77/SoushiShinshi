@@ -11,6 +11,10 @@
   margin-top: 2vh;
 }
 
+#empty_cart {
+  font-size: 6vh;
+}
+
 #checkout_con {
   position: absolute;
   height: 10vh;

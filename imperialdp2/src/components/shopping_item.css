@@ -1,11 +1,11 @@
-html {
+/* html {
   overflow: auto;
-}
+} */
 
 .body_con {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 7vh;
+  margin-top: 0;
   margin-bottom: 7vh;
 }
 
