@@ -13,6 +13,7 @@ import data from "./data/data.json";
 import Home from "./components/Home";
 import ShoppingTemplate from "./components/Shopping-Template";
 import ShoppingItem from "./components/ShoppingItem";
+import About from "./components/About";
 import Cart from "./components/Cart";
 
 export const SHIN_CATEGORIES = ["Suit", "Bowler", "Mustache"];
@@ -32,7 +33,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={Home()} />
           <Route exact path="/cart" element={Cart()} />
-          <Route path="/" element={<Navigate replace to="/" />} />
+          <Route exact path="/about" element={About()} />
           <Route path="/meiji" element={<Navigate replace to="/" />} />
           {shin_routes}
           {sou_routes}
