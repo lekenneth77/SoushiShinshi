@@ -18,7 +18,7 @@ export default function ShoppingItem({ shin_bool, item }) {
   return (
     <>
       <Header shin_bool={parseInt(shin_bool) === 1 ? true : false} />
-      <div className="body_con">
+      <div className="body_container">
         <div className="left_img_con">
           <img
             id="item_img"

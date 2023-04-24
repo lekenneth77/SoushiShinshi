@@ -2,39 +2,111 @@
   "items": [
     {
       "ID": "1",
-      "Category": "Mustache",
-      "Name": "Toolbar",
-      "Price": "50",
-      "Image_src": "big_handlebar.jpg",
-      "Rating": "5",
-      "shin_bool": "1"
+      "Category": "Suits",
+      "Name": "Classic Suit",
+      "Price": "200",
+      "Image_src": "nice_suit.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
     },
     {
       "ID": "2",
-      "Category": "Geta",
-      "Name": "Geta - String",
-      "Price": "80",
-      "Image_src": "big_handlebar.jpg",
-      "Rating": "3",
-      "shin_bool": "0"
+      "Category": "Suits",
+      "Name": "Emperor's Suit",
+      "Price": "500",
+      "Image_src": "emperor_suit.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
     },
     {
       "ID": "3",
-      "Category": "Fudonshi",
-      "Name": "F - String",
-      "Price": "200",
-      "Image_src": "big_handlebar.jpg",
-      "Rating": "2",
-      "shin_bool": "0"
+      "Category": "Hats",
+      "Name": "Silk Top Hat",
+      "Price": "120",
+      "Image_src": "silkhat.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
     },
     {
       "ID": "4",
-      "Category": "Mustache",
-      "Name": "Handlebar",
-      "Price": "56",
-      "Image_src": "big_handlebar.jpg",
-      "Rating": "5",
-      "shin_bool": "1"
+      "Category": "Hats",
+      "Name": "Bowler Hat",
+      "Price": "140",
+      "Image_src": "bowlerhat.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
+    },
+    {
+      "ID": "5",
+      "Category": "Literature",
+      "Name": "Seiyo Ishokuju",
+      "Price": "220",
+      "Image_src": "seiyo.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
+    },
+    {
+      "ID": "6",
+      "Category": "Literature",
+      "Name": "The Gentlemen's Book of Etiquette and Manual of Politeness",
+      "Price": "200",
+      "Image_src": "gentlemen_book.jpg",
+      "shin_bool": "1",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
+    },
+    {
+      "ID": "7",
+      "Category": "Kimono",
+      "Name": "Tattered Kimono",
+      "Price": "250",
+      "Image_src": "tattered_kimono.jpg",
+      "shin_bool": "0",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
+    },
+    {
+      "ID": "8",
+      "Category": "Geta",
+      "Name": "Wooden Geta",
+      "Price": "120",
+      "Image_src": "geta.jpg",
+      "shin_bool": "0",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
+    },
+    {
+      "ID": "9",
+      "Category": "Magazines",
+      "Name": "Marumaru Chinbun",
+      "Price": "80",
+      "Image_src": "marumaru.jpg",
+      "shin_bool": "0",
+      "Desc": "",
+      "c1": "",
+      "c2": "",
+      "c3": ""
     }
   ]
 }

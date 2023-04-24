@@ -6,11 +6,21 @@ import { Link } from "react-router-dom";
 
 import data from "../data/data.json";
 
+const BANNER_SRCS = [
+  "suit_banner.jpg",
+  "hat_banner.jpg",
+  "lit_banner.jpg",
+  "kimono_banner.png",
+  "geta_banner.jpg",
+  "magazine_banner.jpg",
+];
+
 export default function ShoppingTemplate({
   shin_bool,
   title_card_ind,
   category,
 }) {
+  let banners = BANNER_SRCS.map((bann) => bann);
   let items = data.items.map((item) =>
     ShoppingItem({ category: category, item: item })
   );
@@ -21,8 +31,13 @@ export default function ShoppingTemplate({
   return (
     <>
       <Header shin_bool={shin_bool} />
-      <div style={{ display: "flex" }}>
-        <div className="title_card blur-in">TITLE CARD</div>
+      <div className="title_card blur-in">
+        <img
+          className="banner_img"
+          src={require("./../img/" + banners[title_card_ind])}
+          alt="title_card"
+        />
+        <div className="banner_title">{category}</div>
       </div>
       <div className="shopping_items_con">{items}</div>
       <Footer />

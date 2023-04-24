@@ -7,6 +7,8 @@ import Footer from "./Footer.jsx";
 
 import { Link } from "react-router-dom";
 
+let global_title = false;
+
 const Home = () => {
   const [title_slide, set_title_slide] = useState(false);
   const [shin, set_shin] = useState(false);
@@ -16,6 +18,7 @@ const Home = () => {
       set_title_slide(true);
       set_shin(shin_bool);
       document.body.style = "overflow: auto";
+      global_title = shin_bool;
     }
   }
 
@@ -82,12 +85,19 @@ function TitleButton({ name, onClick }) {
   );
 }
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const shin_slides = ["group.jpg", "nice_men.png", "court.jpg"];
+const sou_slides = ["group_samurai.jpg", "more_samurai.jpg", "samurai.png"];
 const delay = 2750;
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
   const timeoutRef = React.useRef(null);
+  let slide;
+  if (global_title) {
+    slide = shin_slides;
+  } else {
+    slide = sou_slides;
+  }
 
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -100,7 +110,7 @@ function Slideshow() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === shin_slides.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -117,12 +127,17 @@ function Slideshow() {
           transform: `translate3d(${-index * 100}%, 0, 0)`,
         }}
       >
-        {colors.map((backgroundColor, index) => (
-          <div className="slide" key={index} style={{ backgroundColor }} />
+        {slide.map((img_src, index) => (
+          <img
+            className="slide"
+            src={require("./../img/" + img_src)}
+            key={index}
+            alt="slide"
+          />
         ))}
       </div>
       <div className="slideshowButtons">
-        {colors.map((_, idx) => (
+        {shin_slides.map((_, idx) => (
           <div
             key={idx}
             className={`slideshowButton${index === idx ? " active" : ""}`}

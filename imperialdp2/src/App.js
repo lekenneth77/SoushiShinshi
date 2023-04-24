@@ -16,8 +16,8 @@ import ShoppingItem from "./components/ShoppingItem";
 import About from "./components/About";
 import Cart from "./components/Cart";
 
-export const SHIN_CATEGORIES = ["Suit", "Bowler", "Mustache"];
-export const SOU_CATEGORIES = ["Kimono", "Fudonshi", "Geta"];
+export const SHIN_CATEGORIES = ["Suits", "Hats", "Literature"];
+export const SOU_CATEGORIES = ["Kimono", "Geta", "Magazines"];
 
 function App() {
   const item_routes = data.items.map((item) => ShoppingItemRoute(item));
@@ -44,7 +44,12 @@ function App() {
   );
 }
 
+let category_counter = -1;
 function ShoppingCategory({ category, shin_bool }) {
+  category_counter++;
+  if (category_counter >= SOU_CATEGORIES.length + SHIN_CATEGORIES.length) {
+    category_counter = 0;
+  }
   return (
     <Route
       key={category}
@@ -52,7 +57,7 @@ function ShoppingCategory({ category, shin_bool }) {
       path={"/" + (category + "").toLowerCase()}
       element={ShoppingTemplate({
         shin_bool: shin_bool,
-        title_card_ind: 0,
+        title_card_ind: category_counter,
         category: category,
       })}
     ></Route>

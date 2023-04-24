@@ -1,5 +1,10 @@
-ID,Category,Name,Price,Image_src,Rating,shin_bool
-1,Mustache,Toolbar,50,lol.jpg,5,1
-2,Geta,Geta - String,80,oof.jpg,3,0
-3,Fudonshi,F - String,200,bruh.jpg,2,0
-4,Mustache,Handlebar,56,lol2.jpg,5,1
+ID,Category,Name,Price,Image_src,shin_bool,Desc,c1,c2,c3
+1,Suits,Classic Suit,200,nice_suit.jpg,1,,,,
+2,Suits,Emperor's Suit,500,emperor_suit.jpg,1,,,,
+3,Hats,Silk Top Hat,120,silkhat.jpg,1,,,,
+4,Hats,Bowler Hat,140,bowlerhat.jpg,1,,,,
+5,Literature,Seiyo Ishokuju,220,seiyo.jpg,1,,,,
+6,Literature,The Gentlemen's Book of Etiquette and Manual of Politeness,200,gentlemen_book.jpg,1,,,,
+7,Kimono,Tattered Kimono,250,tattered_kimono.jpg,0,,,,
+8,Geta,Wooden Geta,120,geta.jpg,0,,,,
+9,Magazines,Marumaru Chinbun,80,marumaru.jpg,0,,,,

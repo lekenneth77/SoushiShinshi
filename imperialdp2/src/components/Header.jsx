@@ -38,7 +38,6 @@ function CreateLink({ name, nameOfClass }) {
       className={"link " + nameOfClass}
       onClick={() => {
         if (name !== "meiji") {
-          console.log("PLEASE");
           document.body.style = "overflow: auto";
         } else {
           document.body.style = "overflow: hidden";
