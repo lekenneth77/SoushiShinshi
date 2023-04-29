@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { useSelector, useDispatch } from "react-redux";
 
-import "./cart.css";
+import "./style/cart.css";
 
 let counter = 0;
 export default function Cart() {
@@ -13,7 +13,6 @@ export default function Cart() {
   let items = counter.arr.map((item) =>
     CartItem({ item: item, dispatch: dispatch })
   );
-  //check if items.length is > 0, if so then make a clear button
   let total = prices.reduce((partialSum, a) => partialSum + a, 0);
 
   return (
@@ -23,6 +22,7 @@ export default function Cart() {
         <div id="checkout_con">
           <div>Total Cost: ${total}</div>
           <button
+            id="checkout_button"
             onClick={() => {
               alert("Unable to checkout!");
             }}

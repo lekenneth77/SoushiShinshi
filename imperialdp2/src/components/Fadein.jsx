@@ -1,4 +1,4 @@
-import "./animation.css";
+import "./style/animation.css";
 import React, { useState } from "react";
 
 export default function FadeInSection(props) {

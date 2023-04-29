@@ -7,10 +7,10 @@
       "Price": "200",
       "Image_src": "nice_suit.jpg",
       "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
+      "Desc": "Introduced by the Westerners, this gentlemanly style fits the fanciest of scenarios. Quite different from the traditional kimono, as it is composed of a frock coat, sleek necktie and white-collared shirt, it is a must have for any Japanese gentlemens. ",
+      "c1": "I bought this for my son who is in law school and it took a lot of convincing, but I think he can finally get some respect!",
+      "c2": " my usually distant European neighbor suddenly started to interact with me a lot more after I started wearing this! I think it must be the suit.",
+      "c3": "These European suits are not fit for us Japanese, I don\u2019t understand why so many are flocking to a different culture instead of embracing our own culture!"
     },
     {
       "ID": "2",
@@ -19,10 +19,10 @@
       "Price": "500",
       "Image_src": "emperor_suit.jpg",
       "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
+      "Desc": " Show off your true gentlemanliness with this majestic fit made for an emperor. Obtain the gaze of all onlookers at any ceremonial occasion with all the shiny jewelry, awards, and medals that you earned with your gentlemanly efforts. Show those uncivilized folk something really Western!",
+      "c1": "wow! I was always looked down upon at the Tokyo Club, but after I bought this, I\u2019ve gained so much respect and praise! Unfortunately my wife didn\u2019t think the same and left\u2026but worth!",
+      "c2": " I let my child stay with this Chinese man for 8 years to afford this suit, and I love it! I\u2019m so glad the officials put in this new dress reform program.",
+      "c3": " wearing this makes me feel like an english pro! yes!"
     },
     {
       "ID": "3",
@@ -31,82 +31,58 @@
       "Price": "120",
       "Image_src": "silkhat.jpg",
       "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
+      "Desc": " The ever so sleek hat fits like a crown for any gentleman. The enhanced height of the hat will pull any gazes upwards presenting you as a much taller gentlemanly fellow. ",
+      "c1": "It appears to give up the wide radius of the traditional bamboo hat and trade it in for height\u2026 What purpose does it serve then as it does not protect well under the sun? ",
+      "c2": " I always thought it was a funny looking European hat but I must say that I find an interesting comfort once it rests on top of my head, like there\u2019s a bird resting inside of the hat. ",
       "c3": ""
     },
     {
       "ID": "4",
-      "Category": "Hats",
-      "Name": "Bowler Hat",
-      "Price": "140",
-      "Image_src": "bowlerhat.jpg",
-      "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
-    },
-    {
-      "ID": "5",
       "Category": "Literature",
       "Name": "Seiyo Ishokuju",
       "Price": "220",
       "Image_src": "seiyo.jpg",
       "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
+      "Desc": " Learn European high society etiquette! Fully translated from trusted European gentlemen sources and includes diagrams and demonstrations within! A must have for any gentlemen attending any banquets or ceremonies. ",
+      "c1": " I take it everywhere I go to look down upon those uncivilized beings! Look at their open toed shoes, their ruffled hair, their posture!",
+      "c2": "literally a how to be a European monkey guide ",
+      "c3": "The other men at the Tokyo Club always commented on my table manners and posture and I could never figure out the proper way until I got this book."
     },
     {
-      "ID": "6",
-      "Category": "Literature",
-      "Name": "The Gentlemen's Book of Etiquette and Manual of Politeness",
-      "Price": "200",
-      "Image_src": "gentlemen_book.jpg",
-      "shin_bool": "1",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
-    },
-    {
-      "ID": "7",
+      "ID": "5",
       "Category": "Kimono",
       "Name": "Tattered Kimono",
       "Price": "250",
       "Image_src": "tattered_kimono.jpg",
       "shin_bool": "0",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
+      "Desc": "Let out your spirit! Let the ripped tears of the kimono shine your determination and manliness through! Let the patches be marks of our traditions! Show those high collar little boys the true meaning of culture and spirit! ",
+      "c1": "YEAHHHHHHHHHHH WOOOOOOOO",
+      "c2": "Why is it so expensive when it\u2019s basically a piece of cloth with a whole bunch of holes and patches? Only a select few can actually afford this stuff\u2026",
+      "c3": " I feel the blood of my ancestors coursing through the fabric, the divine wind that passes through the holes will guide me forward!"
     },
     {
-      "ID": "8",
+      "ID": "6",
       "Category": "Geta",
       "Name": "Wooden Geta",
       "Price": "120",
       "Image_src": "geta.jpg",
       "shin_bool": "0",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
+      "Desc": "The traditional footwear of our ancestors now smoothed so that all of the pesky wooden splinters are gone. The comfortable thick hanao thong rests between toes providing great foot support. ",
+      "c1": " It gets a bit sweaty with the thong but it beats having some pitch black closed toe footwear, those really kill my feet. ",
+      "c2": "Great for walking even though it is kind of heavy and overpriced for a block of wood. ",
       "c3": ""
     },
     {
-      "ID": "9",
+      "ID": "7",
       "Category": "Magazines",
       "Name": "Marumaru Chinbun",
       "Price": "80",
       "Image_src": "marumaru.jpg",
       "shin_bool": "0",
-      "Desc": "",
-      "c1": "",
-      "c2": "",
-      "c3": ""
+      "Desc": " Composed of many reader submitted artwork and poems, this magazine has much more than your typical weekly. It features jokes, puns, poems, cartoons and much more. And the best part is that it\u2019s all about what we love to make fun of the most: politics! ",
+      "c1": "Nothing beats some good ol\u2019 enka with the boys and cracking a laugh at the weekly headlines from the marumaru. ",
+      "c2": "Haha the dancing cabinet jokes never get old! ",
+      "c3": "The art is so good! It describes perfectly how I feel about those apes running office right now!"
     }
   ]
 }

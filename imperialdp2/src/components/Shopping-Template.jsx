@@ -1,5 +1,5 @@
 import React from "react";
-import "./shopping_temp.css";
+import "./style/shopping_temp.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";

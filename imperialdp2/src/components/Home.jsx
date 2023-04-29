@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import "./home.css";
-import "./animation.css";
+import "./style/home.css";
+import "./style/animation.css";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 

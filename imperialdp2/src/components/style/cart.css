@@ -17,16 +17,20 @@
 
 #checkout_con {
   position: absolute;
-  height: 10vh;
+  height: fit-content;
   width: 30vh;
   right: 20vh;
   margin-top: 5vh;
-  font-size: 4vh;
+  font-size: 3vh;
   background-color: blanchedalmond;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+}
+
+#checkout_button {
+  font-size: 2.5vh;
 }
 
 .cart_item {

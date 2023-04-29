@@ -4,8 +4,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FadeInSection from "./Fadein";
 
-import "./shopping_item.css";
-import "./animation.css";
+import "./style/shopping_item.css";
+import "./style/animation.css";
 
 const SIZES = ["XS", "S", "M", "L", "XL"];
 
@@ -39,23 +39,24 @@ export default function ShoppingItem({ shin_bool, item }) {
               ADD TO CART
             </button>
           </div>
-          <h1 style={{ textDecoration: "underline", marginBottom: "2vh" }}>
+          <h1
+            style={{
+              textDecoration: "underline",
+              marginBottom: "2vh",
+              fontSize: "5vh",
+            }}
+          >
             Description
           </h1>
-          <div id="item_desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            modi asperiores nam laboriosam, reprehenderit atque, cumque quia
-            impedit qui cum eius itaque dolore pariatur eveniet repellendus
-            voluptatibus a iusto ut.
-          </div>
+          <div id="item_desc">{item.Desc}</div>
         </div>
       </div>
       <FadeInSection>
         <div className="comments_con">
           <h1 id="comment_title">Comments</h1>
-          <div className="comment">1</div>
-          <div className="comment">2</div>
-          <div className="comment">3</div>
+          <div className="comment">{item.c1}</div>
+          <div className="comment">{item.c2}</div>
+          <div className="comment">{item.c3}</div>
         </div>
       </FadeInSection>
       <Footer />
